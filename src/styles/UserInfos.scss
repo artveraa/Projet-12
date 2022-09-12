@@ -1,0 +1,55 @@
+.user-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.6rem;
+
+  .user-info-card {
+    background-color: #FBFBFB;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+    min-width: 17rem;
+
+    .icon {
+      width: 4rem;
+      height: 4rem;
+      background-color: rgba(red, .1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+
+      &.calorie-icon {
+        background-color: rgba(255, 0, 0, .1);
+      }
+
+      &.proteine-icon {
+        background-color: rgba(74, 184, 255, .1);
+      }
+
+      &.lipid-icon {
+        background-color: rgba(255, 74, 74, .1);
+      }
+
+        &.carbo-icon {
+            background-color: rgba(255, 255, 74, .1);
+        }
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.3rem;
+      font-weight: bolder;
+      span {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #74798C;
+      }
+    }
+  }
+}

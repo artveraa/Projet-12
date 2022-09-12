@@ -1,0 +1,16 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2.9rem;
+
+  .title {
+    font-size: 3.4rem;
+    span {
+      color: red;
+    }
+  }
+
+  .suptitle {
+    font-size: 1.2rem;
+  }
+}
