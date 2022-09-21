@@ -5,6 +5,13 @@ import {getUserActivity} from "../utils/apiCalls";
 import {CustomTooltipActivity} from "./Custom";
 import '../styles/ActivityChart.scss';
 
+/**
+ * un graphique représentant un diagramme en barres avec
+ * l'évolution du poids
+ * et des calories brûlées.
+ * @component
+ */
+
 function ActivityChart() {
     let {id} = useParams();
 

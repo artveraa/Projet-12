@@ -3,6 +3,10 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer} from 'recharts';
 
+/**
+ * un graphique représentant une évolution des différentes capacités.
+ * @component
+ */
 
 function PerformancesChart() {
     let {id} = useParams();

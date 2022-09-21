@@ -1,5 +1,10 @@
 import '../styles/Navbar.scss';
 
+/**
+ * Barre de navigation faisant office de header
+ * @component
+ */
+
 function Navbar() {
     return (
         <div className="navbar">

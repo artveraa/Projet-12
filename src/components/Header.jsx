@@ -2,6 +2,11 @@ import '../styles/Header.scss';
 import logo from '../img/logo.svg';
 import Navbar from "./Navbar";
 
+/**
+ * Header de la page d'accueil
+ * @component
+ */
+
 function Header()  {
     return (
         <div className="header">

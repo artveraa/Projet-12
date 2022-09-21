@@ -6,6 +6,12 @@ import React from "react";
 import {Router, Route, Routes, Link} from "react-router-dom";
 
 
+/**
+ * la page d'accueil principale
+ * où tous les graphiques sont affichés au coeur du Dashboard.
+ * @component
+ */
+
 function App(props) {
     return (
         <div className="App">

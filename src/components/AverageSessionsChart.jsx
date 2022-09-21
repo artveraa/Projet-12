@@ -5,6 +5,12 @@ import {Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis,} from "rech
 import { CustomTooltipObjectif } from './Custom'
 import '../styles/AverageSessions.scss';
 
+/**
+ * un graphique représentant une courbe avec la durée
+ * moyenne des sessions.
+ * @component
+ */
+
 function AverageSessionsChart() {
     let {id} = useParams();
 

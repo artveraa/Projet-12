@@ -5,6 +5,11 @@ import {RadialBarChart, RadialBar, Legend, ResponsiveContainer} from 'recharts';
 import '../styles/ScoreChart.scss';
 import {CustomLegendScore} from "./Custom";
 
+/**
+ * un graphique représentant un objectif
+ * plus ou moins rempli sous forme de pourcentage.
+ * @component
+ */
 
 function ScoreChart() {
     let {id} = useParams()

@@ -1,5 +1,10 @@
 import '../styles/Intro.scss';
 
+/**
+ * Introduction du Dashboard
+ * @component
+ */
+
 function Intro({user}) {
 
     return (

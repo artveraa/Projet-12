@@ -4,6 +4,11 @@ import proteine from '../svg/proteine.svg';
 import glucide from '../svg/glucide.svg';
 import lipid from '../svg/lipid.svg';
 
+/**
+ * Informations générales sur l'utilisateur
+ * @component
+ */
+
 function UserInfos({infos}) {
     return (
         <div className="user-infos">

@@ -9,6 +9,12 @@ import AverageSessionsChart from "./AverageSessionsChart";
 import RadarChart from "./RadarChart";
 import ScoreChart from "./ScoreChart";
 
+/**
+ * Composant central qui rassemble toutes les informations
+ * d'un utilisateur.
+ * @component
+ */
+
 function Dashboard() {
 
     let {id} = useParams();
