@@ -1,0 +1,21 @@
+.label {
+  fill: #20253A;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.value {
+  fill: #282d30;
+  font-weight: bold;
+  font-size: 20px;
+  transform: translateY(-12px);
+}
+
+.helpText {
+  font-size: 10px;
+  transform: translateY(12px);
+  fill: var(--gray);
+  + .helpText {
+    transform: translateY(26px);
+  }
+}

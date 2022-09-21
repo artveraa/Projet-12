@@ -12,7 +12,7 @@ function UserInfos({infos}) {
                     <img src={calorie} alt="calorie"/>
                 </div>
                 <p>
-                    {infos.calorieCount}kCal
+                    {infos.calorieCount / 1000}kCal
                     <span>Calories</span>
                 </p>
             </div>
