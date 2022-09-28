@@ -7,6 +7,10 @@ const kind = {
     6: "Intensité",
 }
 
+/**
+ * @param {Array} data
+ */
+
 class Performances {
     constructor(data) {
         for (let perf of data.data) {

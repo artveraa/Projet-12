@@ -4,6 +4,11 @@ import './index.scss';
 import App from './pages/App';
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 
+/**
+ * Fichier racine de l'application
+ * @type {Root}
+ */
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,3 +1,7 @@
+/**
+ * @param {Array} sessions
+ */
+
 class Activity {
     constructor(data) {
         for (let i = 0; i < data.sessions.length; i++) {

@@ -8,6 +8,10 @@ const day = {
     7: "D",
 }
 
+/**
+ * @param {Array} sessions
+ */
+
 class AverageSessions {
     constructor(data) {
 
