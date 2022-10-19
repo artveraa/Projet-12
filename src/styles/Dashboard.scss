@@ -1,7 +1,11 @@
 .container {
   padding: 4.8rem 6.4rem 0 7.6rem;
-  width: 100%;
+  width: 90%;
   height: 100%;
+
+  @media (max-width: 1024px) {
+    padding: 2rem 2rem 0 2rem;
+  }
 
   .all-infos {
     display: flex;
@@ -11,7 +15,7 @@
 
     .charts {
 
-      width: 100%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -32,6 +36,11 @@
           width: 320px;
           height: 320px;
           overflow: hidden;
+
+          @media (max-width: 1024px) {
+            width: 200px;
+            height: 200px;
+          }
           
           &:first-child {
             background-color: #FF0000;

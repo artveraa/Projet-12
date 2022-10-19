@@ -19,7 +19,7 @@ export { getUserInfos }
 /**
  * Retrieves the user's activity from the API
  * @param {Number} id - The user's id
- * @returns {Promise<Object>} - The user's activity
+ * @returns {Promise<Activity>} - The user's activity
  */
 
 const getUserActivity = async(id) => {
@@ -35,7 +35,7 @@ export { getUserActivity }
 /**
  * Retrieves the user's average sessions from the API
  * @param {Number} id - The user's id
- * @returns {Promise<Object>} - The user's average sessions
+ * @returns {Promise<AverageSessions>} - The user's average sessions
  */
 
 const getUserAverageSession = async(id) => {
@@ -49,8 +49,8 @@ export { getUserAverageSession }
 
 /**
  * Retrieves the user's performances from the API
- * @param {Number} id
- * @returns {Promise<Object>} - The user's performances
+ * @param {Number} id - The user's id
+ * @returns {Promise<Performances>} - The user's performances
  */
 
 const getRadarInfos = async(id) => {

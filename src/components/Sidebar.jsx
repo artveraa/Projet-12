@@ -9,7 +9,14 @@ import '../styles/Sidebar.scss';
 function Sidebar() {
     return (
         <div className="sidebar">
+            <ul>
+                <li><a href="#">yoga</a></li>
+                <li><a href="#">natation</a></li>
+                <li><a href="#">vélo</a></li>
+                <li><a href="#">muscu</a></li>
+            </ul>
 
+            <p>Copiryght, SportSee 2020</p>
         </div>
     );
 }

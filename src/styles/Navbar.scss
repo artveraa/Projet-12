@@ -3,6 +3,10 @@
     display: flex;
     gap: 14rem;
 
+    @media (max-width: 1024px) {
+      gap: 2rem;
+    }
+
     li {
       list-style-type: none;
       color: #FFF;
