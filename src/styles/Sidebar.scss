@@ -1,12 +1,12 @@
 .sidebar {
   width: 10%;
-  height: 100vh;
+  height: calc(100vh - 104px);
   background-color: #000;
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 
   ul {
     display: flex;
@@ -23,10 +23,19 @@
         width: 48px;
         height: 48px;
       }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+      }
     }
   }
 
   p {
     color: #FFF;
+    transform: rotate(-90deg);
   }
 }

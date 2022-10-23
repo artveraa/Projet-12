@@ -2,6 +2,7 @@ import '../styles/App.scss';
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import Dashboard from "../components/Dashboard";
+import Error from "../components/Error";
 import React from "react";
 import {Router, Route, Routes, Link} from "react-router-dom";
 
@@ -21,6 +22,7 @@ function App(props) {
                 <Sidebar/>
                 <Routes>
                     <Route path="/user/:id" element={<Dashboard/>}/>
+                    <Route path="*" element={<Error/>}/>
                 </Routes>
             </div>
         </div>

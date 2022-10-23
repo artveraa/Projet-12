@@ -8,6 +8,8 @@ import ActivityChart from "./ActivityChart";
 import AverageSessionsChart from "./AverageSessionsChart";
 import RadarChart from "./RadarChart";
 import ScoreChart from "./ScoreChart";
+import Error from "./Error";
+
 
 /**
  * Composant central qui rassemble toutes les informations
@@ -16,7 +18,6 @@ import ScoreChart from "./ScoreChart";
  */
 
 function Dashboard() {
-
     let {id} = useParams();
 
     const [user, setUser] = useState({});
@@ -28,32 +29,46 @@ function Dashboard() {
         });
     }, []);
 
+    console.log(user);
+
 
     return (
-        <div className="container">
-            <Intro user={user}/>
-            <div className={'all-infos'}>
-                <div className="charts">
-                    <div className="main-chart">
-                        <ActivityChart/>
+        <>
+            {user ? (
+                <div className="container">
+                    <Intro user={user}/>
+                    <div className={'all-infos'}>
+                        <div className="charts">
+                            <div className="main-chart">
+                                <ActivityChart/>
+                            </div>
+                            <div className="three-charts">
+                                <div className="average-sessions-chart chart">
+                                    <AverageSessionsChart/>
+                                </div>
+                                <div className="radar-chart chart">
+                                    <RadarChart/>
+                                </div>
+                                <div className="score-chart chart">
+                                    <ScoreChart/>
+                                </div>
+                            </div>
+                        </div>
+                        <UserInfos infos={infos}/>
                     </div>
-                    <div className="three-charts">
-                        <div className="average-sessions-chart chart">
-                            <AverageSessionsChart/>
-                        </div>
-                        <div className="radar-chart chart">
-                            <RadarChart/>
-                        </div>
-                        <div className="score-chart chart">
-                            <ScoreChart/>
-                        </div>
-                    </div>
+
+
                 </div>
-                <UserInfos infos={infos}/>
-            </div>
+            ) : (
+                <Error/>
+            )}
 
 
-        </div>
+
+
+        </>
+
+
     );
 }
 

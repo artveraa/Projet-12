@@ -1,6 +1,7 @@
 import Performances from './performances.js'
 import AverageSessions from "./averageSessions";
 import Activity from "./activity";
+import Error from "../components/Error";
 
 /**
  * Retrieves the user's informations from the API
@@ -11,7 +12,13 @@ import Activity from "./activity";
 const getUserInfos = async(id) => {
     let response = await fetch(`http://localhost:3000/user/${id}`)
     let data = await response.json()
-    return data.data;
+
+    if (response.status !== 200) {
+        console.log(`Error ${response.status}: ${data.message}`)
+        return <Error/>
+    } else {
+        return data.data;
+    }
 }
 
 export { getUserInfos }
